@@ -35,7 +35,7 @@ function Export-Set() {
 
     $s = 2
 
-    $w = (16 * $s) * 10
+    $w = (16 * $s) * 20
     $i = $index - 1
     aseprite --frame-range "$i,$i" -b src/* --sheet-width $w --scale $s --sheet "dist/$name.png"
 }
